@@ -76,8 +76,7 @@ LoginRegisterSystem/
 ## ▶️ How to Run the Project
 
 1. Clone or download the repository.  
-2. Open the `index.html` file in any modern web browser.  
-3. Start by registering a new account, then login with those credentials.  
+2. Open the `index.html` file in any modern web browser.    
 
 - 🧾 [Repository](https://github.com/Mark-Atef/Login-Register-System-Using-JavaScript.git)
 
