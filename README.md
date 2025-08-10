@@ -79,6 +79,8 @@ LoginRegisterSystem/
 2. Open the `index.html` file in any modern web browser.  
 3. Start by registering a new account, then login with those credentials.  
 
+- 🧾 [Repository](https://github.com/Mark-Atef/Login-Register-System-Using-JavaScript.git)
+
 *No installation or server setup needed — runs entirely in the browser.*
 
 ## 🚀 Live Demo
