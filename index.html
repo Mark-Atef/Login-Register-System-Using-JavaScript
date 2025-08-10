@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Register Form -->
+      <div id="registerForm">
+        <h2>Register</h2>
+        <input type="text" id="regUsername" placeholder="Username" required />
+        <input type="email" id="regEmail" placeholder="Email" required />
+        <input
+          type="password"
+          id="regPassword"
+          placeholder="Password"
+          oninput="checkPasswordStrength()"
+          required
+        />
+        <div id="passwordStrength" class="strength"></div>
+        <input
+          type="password"
+          id="regConfirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <div id="regError" class="error"></div>
+        <button onclick="register()">Register</button>
+        <p onclick="showLogin()">Already have an account? Login</p>
+      </div>
+
+      <!-- Login Form -->
+      <div id="loginForm" class="hidden">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Password"
+          required
+        />
+
+        <label class="remember-me">
+          <input type="checkbox" id="rememberMe" />
+          <span class="checkmark"></span>
+          <span>Remember me</span>
+        </label>
+
+        <div id="loginError" class="error"></div>
+        <button onclick="login()">Login</button>
+        <p onclick="showRegister()">Don’t have an account? Register</p>
+      </div>
+
+      <!-- Profile Page -->
+      <div id="profilePage" class="hidden profile-container">
+        <h2>Welcome, <span id="profileName"></span> 👋</h2>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <script src="js/scribt.js"></script>
+  </body>
+</html>
